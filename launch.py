@@ -1,5 +1,3 @@
-import os 
-
 from modules import launch_utils
 
 args = launch_utils.args
@@ -14,7 +12,6 @@ git_tag = launch_utils.git_tag
 run = launch_utils.run
 is_installed = launch_utils.is_installed
 repo_dir = launch_utils.repo_dir
-commandline_args = os.environ.get('COMMANDLINE_ARGS', "--skip-torch-cuda-test --precision full --no-half")
 run_pip = launch_utils.run_pip
 check_run_python = launch_utils.check_run_python
 git_clone = launch_utils.git_clone
